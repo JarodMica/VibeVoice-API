@@ -33,13 +33,11 @@ dependencies = [
     "absl-py",
     "gradio",
     "av",
-    "aiortc"
+    "aiortc",
+    "flash-attn",
+    "triton-windows<3.4",
 ]
 
-
-[project.urls]
-"Homepage" = "https://github.com/microsoft/VibeVoice"
-"Bug Tracker" = "https://github.com/microsoft/VibeVoice/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
