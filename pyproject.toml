@@ -42,7 +42,6 @@ dependencies = [
 [tool.setuptools.packages.find]
 where = ["."]
 
-
 [project.optional-dependencies]
 cu128 = [
   "torch==2.7.1",
