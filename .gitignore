@@ -175,3 +175,7 @@ tags
 /checkpoints/
 exp
 .gradio/
+*dataset*
+models/
+realtime_tests/
+*.whl
