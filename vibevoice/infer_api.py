@@ -1,11 +1,12 @@
 """
 Object-oriented interface for loading VibeVoice models and running TTS inference.
 """
+from __future__ import annotations
+
 import numpy as np
 import random
 import torch
 
-from __future__ import annotations
 from pathlib import Path
 from typing import Iterable, List, Sequence, Tuple, Union
 

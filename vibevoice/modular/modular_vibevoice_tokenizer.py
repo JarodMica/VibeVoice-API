@@ -14,8 +14,11 @@ from transformers.models.auto import AutoModel
 
 from transformers.configuration_utils import PretrainedConfig
 from transformers.utils import logging
-from transformers.modeling_utils import PreTrainedModel
 from transformers.activations import ACT2FN
+from vibevoice.runtime_compat import suppress_deepspeed_discovery
+
+with suppress_deepspeed_discovery():
+    from transformers.modeling_utils import PreTrainedModel
 
 from .configuration_vibevoice import VibeVoiceAcousticTokenizerConfig, VibeVoiceSemanticTokenizerConfig
 

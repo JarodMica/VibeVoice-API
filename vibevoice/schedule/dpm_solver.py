@@ -20,6 +20,10 @@ from typing import List, Optional, Tuple, Union
 import numpy as np
 import torch
 
+from vibevoice.runtime_compat import disable_diffusers_peft_version_gate
+
+disable_diffusers_peft_version_gate()
+
 from diffusers.configuration_utils import ConfigMixin, register_to_config
 from diffusers.utils import deprecate
 from diffusers.utils.torch_utils import randn_tensor

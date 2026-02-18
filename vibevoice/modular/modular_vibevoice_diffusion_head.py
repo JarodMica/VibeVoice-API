@@ -6,10 +6,13 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from transformers.models.auto import AutoModel
-from transformers.modeling_utils import PreTrainedModel
 # from transformers.modeling_layers import GradientCheckpointingLayer
 from transformers.activations import ACT2FN
 from transformers.utils import logging
+from vibevoice.runtime_compat import suppress_deepspeed_discovery
+
+with suppress_deepspeed_discovery():
+    from transformers.modeling_utils import PreTrainedModel
 
 from .configuration_vibevoice import VibeVoiceDiffusionHeadConfig
 
